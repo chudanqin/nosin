@@ -1,0 +1,6 @@
+framework module nosin {
+  umbrella header "nosin-umbrella.h"
+
+  export *
+  module * { export * }
+}

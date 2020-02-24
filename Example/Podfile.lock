@@ -1,0 +1,16 @@
+PODS:
+  - nosin (0.1.0)
+
+DEPENDENCIES:
+  - nosin (from `../`)
+
+EXTERNAL SOURCES:
+  nosin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  nosin: 49f973ec54d395be6947c8568673f7acd22b4c91
+
+PODFILE CHECKSUM: 1247bca68446ff753e16c93fb383ebfed2c58f1e
+
+COCOAPODS: 1.8.4
