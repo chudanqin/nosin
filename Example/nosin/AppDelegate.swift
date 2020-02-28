@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import nosin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2738E7D6C11BEED967750B210ACF0B33 /* nosin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C460713A663212BFFD34012F85C8F3D /* nosin-dummy.m */; };
 		2EF99A5C7411D369AC54C209444634E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		2F3BBE8A7E3BD150541779486DDD4E38 /* Pods-nosin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB83C013BE2E3811DCCB95F73B7B702 /* Pods-nosin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37669CC0FEEC5FBA982179F05CE2648A /* nosin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233C622133626143D922F59584F9AB78 /* nosin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B9C535D0FFECD38A30DF4B1042D6220 /* Pods-nosin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CC50A99C0997C900D41C514065ED5 /* Pods-nosin_Tests-dummy.m */; };
-		5B2A36F9FBA90CA4B48244968269323E /* PayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA809F1A9FABC5FE14A678C4E5207F0A /* PayLink.swift */; };
 		5F532C4DAF8B8DCB713D3A6F419435C8 /* Pods-nosin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C6A105A31D684E3D353ED36C1DEFBB /* Pods-nosin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994BF33957862323154C84EB3B3DC455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A9C89285F06124C48A2AE3FA1F35EC02 /* nosin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496F02DD18C5567F4753C4E0ADAAC3A /* nosin-dummy.m */; };
 		C3F51B4FA15F424294FC64C772D13CE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D458DCAA5CED3B80720EC7DEC62652C7 /* nosin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C9C4E26E6D382B956399E0BEAC165C /* nosin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE4A39C1A03162D4EAE88C3557A84D8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C732544DF3E0EBC756CB9B335F876DAC /* PayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F711200DDC30B831D66E46CEA04143 /* PayLink.swift */; };
+		DDDCD865D9624303FCD45FFA1768BB4C /* PayLinkInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E62A79B097DC8D4F67CCC65BD3D81A /* PayLinkInternal.swift */; };
 		E60E78A47363D0859CBB4EEFA0B6D9BA /* Pods-nosin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7142C19EC02AA251DF89CB949BA086 /* Pods-nosin_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E9CB1EF10426C9C054F289ABAE988AF /* nosin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nosin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0496F02DD18C5567F4753C4E0ADAAC3A /* nosin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nosin-dummy.m"; sourceTree = "<group>"; };
+		0CBB9A319BD03DE59B6E896E766C4CED /* nosin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "nosin-Info.plist"; sourceTree = "<group>"; };
+		0E9CB1EF10426C9C054F289ABAE988AF /* nosin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nosin.framework; path = nosin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B14D2E4CA7FA6C44C20DFA79643AAD /* Pods-nosin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nosin_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		110049BF92D507C31862A6295D65B010 /* nosin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "nosin-Info.plist"; sourceTree = "<group>"; };
-		1C982EBEC813871252F4148DBC0D179C /* Pods_nosin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nosin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C982EBEC813871252F4148DBC0D179C /* Pods_nosin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_nosin_Tests.framework; path = "Pods-nosin_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		233C622133626143D922F59584F9AB78 /* nosin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nosin-umbrella.h"; sourceTree = "<group>"; };
 		27E3C20EB6D82FBE111C94FAF96E9B0E /* Pods-nosin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nosin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2E366DCB51272F2FFCB63102B445B85E /* Pods-nosin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nosin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -48,26 +51,25 @@
 		37C6A105A31D684E3D353ED36C1DEFBB /* Pods-nosin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nosin_Example-umbrella.h"; sourceTree = "<group>"; };
 		383D0521EE39C876B05C3A0C61FD6701 /* Pods-nosin_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nosin_Tests-Info.plist"; sourceTree = "<group>"; };
 		40389296A8D7301D3FB163A8E1586EF3 /* Pods-nosin_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nosin_Example-Info.plist"; sourceTree = "<group>"; };
+		47E62A79B097DC8D4F67CCC65BD3D81A /* PayLinkInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PayLinkInternal.swift; path = nosin/Classes/PayLinkInternal.swift; sourceTree = "<group>"; };
+		4B5C888CB07D966A7DB441152C8A22A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		53752C29BB1FF5ACC253D4F93F971B24 /* nosin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nosin-prefix.pch"; sourceTree = "<group>"; };
 		5C2C7066F11EA5F2ADE4DCDC041AF8EB /* Pods-nosin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nosin_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5FBF731839EC9F08B69ED8D0A8B6B148 /* Pods-nosin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nosin_Example.release.xcconfig"; sourceTree = "<group>"; };
-		676E3FFD380EE69256F37A1365A5AC1B /* nosin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nosin.modulemap; sourceTree = "<group>"; };
-		696CA8F9BC4C3B14AC0B9DC620ECF0A9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		6B7FAD5E15B44A721EEBED156CA56520 /* nosin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = nosin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6D435C129F1E675E115C4FF0B89CDCF1 /* Pods_nosin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nosin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6064A37DD78980EC56970BFD20201EEA /* nosin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nosin.modulemap; sourceTree = "<group>"; };
+		64C1A9F6CF55A71EDD3E7C6DD01C39B2 /* nosin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nosin.xcconfig; sourceTree = "<group>"; };
+		6D435C129F1E675E115C4FF0B89CDCF1 /* Pods_nosin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_nosin_Example.framework; path = "Pods-nosin_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE81CE57D337928D63A2A0DFF4ABC4C /* Pods-nosin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nosin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E575B636A3F7EAA57039578E8FB72C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		8154835C0815C1FAE4421617147FB97A /* Pods-nosin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nosin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8E0CC50A99C0997C900D41C514065ED5 /* Pods-nosin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nosin_Tests-dummy.m"; sourceTree = "<group>"; };
-		925A9EF260EF61264DF7BE6CC645546B /* nosin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nosin.xcconfig; sourceTree = "<group>"; };
-		9C460713A663212BFFD34012F85C8F3D /* nosin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nosin-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F44842EE32E490CE3152BBFF54751AF /* nosin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nosin-prefix.pch"; sourceTree = "<group>"; };
+		9C3DE0D8089FB046FC2C80972DF543B0 /* nosin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = nosin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9605BFB154DCD89A40662FC4A4BD4F8 /* Pods-nosin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nosin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B528CFB5B79B33935190FB696EEE1E5E /* Pods-nosin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-nosin_Example.modulemap"; sourceTree = "<group>"; };
-		BA809F1A9FABC5FE14A678C4E5207F0A /* PayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PayLink.swift; path = nosin/Classes/PayLink.swift; sourceTree = "<group>"; };
-		C6C9C4E26E6D382B956399E0BEAC165C /* nosin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nosin-umbrella.h"; sourceTree = "<group>"; };
 		D9D3B32DE17961E2CBC742436273520B /* Pods-nosin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nosin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCB83C013BE2E3811DCCB95F73B7B702 /* Pods-nosin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nosin_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F637CD855E5725B4A61A418951AE73A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E5F711200DDC30B831D66E46CEA04143 /* PayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PayLink.swift; path = nosin/Classes/PayLink.swift; sourceTree = "<group>"; };
 		FC7142C19EC02AA251DF89CB949BA086 /* Pods-nosin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nosin_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B640F65E9417B53ACAFABB4A73E5DF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994BF33957862323154C84EB3B3DC455 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		664735F27B4B25E0A145AC1911B8841D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,28 +98,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7314386E871C77708ADDCDA5B04545A1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE4A39C1A03162D4EAE88C3557A84D8C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EF28642ECE6A2EB1631E1939B2BB536 /* nosin */ = {
-			isa = PBXGroup;
-			children = (
-				BA809F1A9FABC5FE14A678C4E5207F0A /* PayLink.swift */,
-				CB858EF60ED29D16F572A740B758DD37 /* Pod */,
-				2F2F13CE3E1448B31C7EDEC224AFBFDD /* Support Files */,
-			);
-			name = nosin;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		1DE233F28881DF2C78D177FE9ABFF086 /* Pods-nosin_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,26 +118,48 @@
 			path = "Target Support Files/Pods-nosin_Example";
 			sourceTree = "<group>";
 		};
-		2F2F13CE3E1448B31C7EDEC224AFBFDD /* Support Files */ = {
+		5D74580EE747F130FF101494AF3A69AC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				676E3FFD380EE69256F37A1365A5AC1B /* nosin.modulemap */,
-				925A9EF260EF61264DF7BE6CC645546B /* nosin.xcconfig */,
-				9C460713A663212BFFD34012F85C8F3D /* nosin-dummy.m */,
-				110049BF92D507C31862A6295D65B010 /* nosin-Info.plist */,
-				9F44842EE32E490CE3152BBFF54751AF /* nosin-prefix.pch */,
-				C6C9C4E26E6D382B956399E0BEAC165C /* nosin-umbrella.h */,
+				6064A37DD78980EC56970BFD20201EEA /* nosin.modulemap */,
+				64C1A9F6CF55A71EDD3E7C6DD01C39B2 /* nosin.xcconfig */,
+				0496F02DD18C5567F4753C4E0ADAAC3A /* nosin-dummy.m */,
+				0CBB9A319BD03DE59B6E896E766C4CED /* nosin-Info.plist */,
+				53752C29BB1FF5ACC253D4F93F971B24 /* nosin-prefix.pch */,
+				233C622133626143D922F59584F9AB78 /* nosin-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/nosin";
 			sourceTree = "<group>";
 		};
-		6691CA7390145A9B80EC30676E436573 /* Development Pods */ = {
+		6CBBF0D735EBA0F6D065DE793E1EAA6C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0EF28642ECE6A2EB1631E1939B2BB536 /* nosin */,
+				ADDA1A116981C7878192465E57AA7CAB /* nosin */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		78ECB158022A091A5407D329A67CCC94 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4B5C888CB07D966A7DB441152C8A22A2 /* LICENSE */,
+				9C3DE0D8089FB046FC2C80972DF543B0 /* nosin.podspec */,
+				7E575B636A3F7EAA57039578E8FB72C1 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		ADDA1A116981C7878192465E57AA7CAB /* nosin */ = {
+			isa = PBXGroup;
+			children = (
+				E5F711200DDC30B831D66E46CEA04143 /* PayLink.swift */,
+				47E62A79B097DC8D4F67CCC65BD3D81A /* PayLinkInternal.swift */,
+				78ECB158022A091A5407D329A67CCC94 /* Pod */,
+				5D74580EE747F130FF101494AF3A69AC /* Support Files */,
+			);
+			name = nosin;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B45FBD68D28410C464318C6812E8481F /* Products */ = {
@@ -167,21 +180,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CB858EF60ED29D16F572A740B758DD37 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				696CA8F9BC4C3B14AC0B9DC620ECF0A9 /* LICENSE */,
-				6B7FAD5E15B44A721EEBED156CA56520 /* nosin.podspec */,
-				F637CD855E5725B4A61A418951AE73A9 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				6691CA7390145A9B80EC30676E436573 /* Development Pods */,
+				6CBBF0D735EBA0F6D065DE793E1EAA6C /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				B45FBD68D28410C464318C6812E8481F /* Products */,
 				E6C3B5E6DE56D5D2D233ADC8A8C64291 /* Targets Support Files */,
@@ -224,14 +227,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		78583181F4ED321CE767756364794415 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D458DCAA5CED3B80720EC7DEC62652C7 /* nosin-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A2EA6B799C009F41DF53F8350F0D7A3E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +240,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3BBE8A7E3BD150541779486DDD4E38 /* Pods-nosin_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84541B47CF884D5D17EE3447D55DAFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37669CC0FEEC5FBA982179F05CE2648A /* nosin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +294,12 @@
 		};
 		9717278F29924D18142EBFDB1DD9A22A /* nosin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93A01CFEEDDEA24EBEBFEB9D61E61AF9 /* Build configuration list for PBXNativeTarget "nosin" */;
+			buildConfigurationList = 533275A3DCFFA4A2885DBE967FCFC002 /* Build configuration list for PBXNativeTarget "nosin" */;
 			buildPhases = (
-				78583181F4ED321CE767756364794415 /* Headers */,
-				C3D55D8AFD3036B47347D3D13D6156C7 /* Sources */,
-				7314386E871C77708ADDCDA5B04545A1 /* Frameworks */,
-				CD4E8AB6D743869F05D981CB341D51E3 /* Resources */,
+				C84541B47CF884D5D17EE3447D55DAFC /* Headers */,
+				077C5B0FA2C5F4A2765F347247653F41 /* Sources */,
+				5B640F65E9417B53ACAFABB4A73E5DF4 /* Frameworks */,
+				27BBE38AE4F432C4A0C7FE4654FF0D2A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -337,6 +340,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		27BBE38AE4F432C4A0C7FE4654FF0D2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C44DC93FA3A9C1C971266A33B56FFC1F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,16 +361,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD4E8AB6D743869F05D981CB341D51E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		077C5B0FA2C5F4A2765F347247653F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C89285F06124C48A2AE3FA1F35EC02 /* nosin-dummy.m in Sources */,
+				C732544DF3E0EBC756CB9B335F876DAC /* PayLink.swift in Sources */,
+				DDDCD865D9624303FCD45FFA1768BB4C /* PayLinkInternal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E1081E34D1D8F6DEF1FFF042A2ECB47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,15 +387,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60E78A47363D0859CBB4EEFA0B6D9BA /* Pods-nosin_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3D55D8AFD3036B47347D3D13D6156C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2738E7D6C11BEED967750B210ACF0B33 /* nosin-dummy.m in Sources */,
-				5B2A36F9FBA90CA4B48244968269323E /* PayLink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +442,37 @@
 			};
 			name = Release;
 		};
+		48226042FE4B271C4292A1FDE2CEC83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C1A9F6CF55A71EDD3E7C6DD01C39B2 /* nosin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nosin/nosin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nosin/nosin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nosin/nosin.modulemap";
+				PRODUCT_MODULE_NAME = nosin;
+				PRODUCT_NAME = nosin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4AB8EF72B0842C9F7A08E032C79484CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E366DCB51272F2FFCB63102B445B85E /* Pods-nosin_Example.debug.xcconfig */;
@@ -470,6 +505,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		65963BFC442DF3F796F2263694A6BCEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C1A9F6CF55A71EDD3E7C6DD01C39B2 /* nosin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nosin/nosin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nosin/nosin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nosin/nosin.modulemap";
+				PRODUCT_MODULE_NAME = nosin;
+				PRODUCT_NAME = nosin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		961F38401B1DC8871CE67DE8D6504B07 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -558,7 +625,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -628,69 +696,6 @@
 			};
 			name = Debug;
 		};
-		CB749C9892F6B5B5931BE8AB4DAD337E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 925A9EF260EF61264DF7BE6CC645546B /* nosin.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/nosin/nosin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/nosin/nosin-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/nosin/nosin.modulemap";
-				PRODUCT_MODULE_NAME = nosin;
-				PRODUCT_NAME = nosin;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D8AAA2F43E28477621C04460C583C82E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 925A9EF260EF61264DF7BE6CC645546B /* nosin.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/nosin/nosin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/nosin/nosin-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/nosin/nosin.modulemap";
-				PRODUCT_MODULE_NAME = nosin;
-				PRODUCT_NAME = nosin;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		EB6617E2582B9A109FDB179011BBDF35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9D3B32DE17961E2CBC742436273520B /* Pods-nosin_Tests.debug.xcconfig */;
@@ -736,11 +741,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93A01CFEEDDEA24EBEBFEB9D61E61AF9 /* Build configuration list for PBXNativeTarget "nosin" */ = {
+		533275A3DCFFA4A2885DBE967FCFC002 /* Build configuration list for PBXNativeTarget "nosin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB749C9892F6B5B5931BE8AB4DAD337E /* Debug */,
-				D8AAA2F43E28477621C04460C583C82E /* Release */,
+				48226042FE4B271C4292A1FDE2CEC83E /* Debug */,
+				65963BFC442DF3F796F2263694A6BCEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
