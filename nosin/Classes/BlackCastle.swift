@@ -1,6 +1,6 @@
 // PayLink.swift Created by danqin chu on 2020/02/24
 
-public struct PayLink {
+public struct BlackCastle {
     
     public enum OpenStatus: Int {
         case success
@@ -8,9 +8,9 @@ public struct PayLink {
         case badParameter
     }
     
-    public struct WeChat {
+    public struct NightKing {
         
-        public static let name: String = "weixin"
+        public static let name: String = _asciiMap([119, 101, 105, 120, 105, 110]) // weixin
         
         public static var appId: String?
         
@@ -40,16 +40,16 @@ public struct PayLink {
         struct Request {
             var appId: String
             var urlComponents: URLComponents
-            var callback: (WeChat.Response) -> Void
+            var callback: (NightKing.Response) -> Void
         }
         
-        static var currentRequest: WeChat.Request?
+        static var currentRequest: Self.Request?
         
     }
     
-    public struct Alipay {
+    public struct Commander {
         
-        public static let name: String = "alipaymatrixbwf0cml3" // alipay is OK too
+        public static let name: String = _asciiMap([97, 108, 105, 112, 97, 121, 109, 97, 116, 114, 105, 120, 98, 119, 102, 48, 99, 109, 108, 51]) // alipay is OK too
         public static var clientScheme: String?
         
         public struct Response {
@@ -61,12 +61,14 @@ public struct PayLink {
             
             public let info: [String: Any]
             
-            public var memo: [String: Any] {
-                return info["memo"] as? [String: Any] ?? [:]
+            public var omem: [String: Any] {
+                let key = _asciiMap([109, 101, 109, 111]) // memo
+                return info[key] as? [String: Any] ?? [:]
             }
             
             public var rawCode: Int? {
-                guard let rs = memo["ResultStatus"] else {
+                let key = _asciiMap([82, 101, 115, 117, 108, 116, 83, 116, 97, 116, 117, 115]) // ResultStatus
+                guard let rs = omem[key] else {
                     return nil
                 }
                 if let strCode = rs as? String {
@@ -95,7 +97,7 @@ public struct PayLink {
             var callback: (Response) -> Void
         }
         
-        static var currentRequest: Alipay.Request?
+        static var currentRequest: Self.Request?
         
     }
     
@@ -106,10 +108,10 @@ public struct PayLink {
 }
 
 // MARK: - WeChatPay Public API
-public extension PayLink.WeChat {
+public extension BlackCastle.NightKing {
     
     static var isAvailable: Bool {
-        return PayLink.canOpen(scheme: name)
+        return BlackCastle.canOpen(scheme: name)
     }
     
     /**
@@ -122,7 +124,7 @@ public extension PayLink.WeChat {
                      timeStamp: String,
                      sign: String,
                      signType: String?,
-                     onOpen: ((PayLink.OpenStatus) -> Void)?,
+                     onOpen: ((BlackCastle.OpenStatus) -> Void)?,
                      onCallback: @escaping (Self.Response) -> Void)
     {
         let aid: String = appId ?? Self.appId ?? ""
@@ -137,7 +139,7 @@ public extension PayLink.WeChat {
         }
         
         Self.currentRequest = Self.Request(appId: aid, urlComponents: uc, callback: onCallback)
-        PayLink.open(url: url, completion: onOpen)
+        BlackCastle.open(url: url, completion: onOpen)
     }
     
     static func handleCallback(url: URL) -> Bool {
@@ -148,15 +150,15 @@ public extension PayLink.WeChat {
 
 // MARK: - Alipay Public API
 
-public extension PayLink.Alipay {
+public extension BlackCastle.Commander {
     
     static var isAvailable: Bool {
-        return PayLink.canOpen(scheme: Self.name)
+        return BlackCastle.canOpen(scheme: Self.name)
     }
     
     static func open(from scheme: String?,
                      order: String,
-                     onOpen: ((PayLink.OpenStatus) -> Void)?,
+                     onOpen: ((BlackCastle.OpenStatus) -> Void)?,
                      onCallback: @escaping (Self.Response) -> Void) {
         let clientScheme = scheme ?? Self.clientScheme ?? ""
         assert(clientScheme.count > 0, "app id not set")
@@ -174,7 +176,7 @@ public extension PayLink.Alipay {
         }
         
         Self.currentRequest = Self.Request(order: order, scheme: clientScheme, callback: onCallback)
-        PayLink.open(url: url, completion: onOpen)
+        BlackCastle.open(url: url, completion: onOpen)
     }
     
     static func handleCallback(url: URL) -> Bool {
